@@ -23,6 +23,10 @@ module('PokemonApp')
             templateUrl: 'src/CreatePokemon/CreatePokemon.html',
             controller: 'CreatePokemonCtrl'
         }).
+        when('/berries', {
+            templateUrl: 'src/BerriesList/BerriesList.html',
+            controller: 'BerriesListCtrl'
+        }).
         otherwise({
             redirectTo: '/'
         });
@@ -31,8 +35,8 @@ module('PokemonApp')
 
 .config(['$httpProvider', function($httpProvider) {
     $httpProvider.defaults.headers.common = {
-        "application-id": "4B730C92-F81E-236B-FFF0-6651FE882800",
-        "secret-key": "CB6DE86C-6069-86C4-FF1C-9049D5AC9400"
+        "application-id": "238CFA67-DD9E-D55A-FF50-723F8B990100",
+        "secret-key": "1D960D5D-3B9A-0C37-FF3D-E1BE0248B300"
     };
 
 }]);
